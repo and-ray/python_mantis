@@ -32,7 +32,7 @@ class ProjectHelper:
     def delete_project(self, project_to_delete):
         wd = self.app.wd
         self.goto_manage_project_page()
-        wd.find_element(By.XPATH,"//a[text()='%s']" % project_to_delete.name).click()
+        wd.find_element(By.XPATH,"//a[text()='%s']" % project_to_delete).click()
         wd.find_element(By.XPATH,"//input[@value='Delete Project']").click()
         wd.find_element(By.XPATH,"//input[@value='Delete Project']").click()
 
